@@ -90,7 +90,7 @@ On app boot (`main.tsx`), the Zustand store's `hydrate()` method reads both valu
 ### Steps
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/amreshkyadav998/taskflow-amresh-yadav)
 cd taskflow
 cp .env.example .env
 docker compose up --build
