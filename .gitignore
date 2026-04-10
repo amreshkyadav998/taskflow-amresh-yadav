@@ -1,0 +1,22 @@
+# Environment variables — NEVER commit .env
+.env*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sw?
