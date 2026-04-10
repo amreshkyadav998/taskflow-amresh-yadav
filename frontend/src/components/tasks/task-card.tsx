@@ -46,6 +46,7 @@ export function TaskCard({ task, onView, onEdit, onDelete }: TaskCardProps) {
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
+    touchAction: "none" as const,
   };
 
   return (
@@ -55,7 +56,7 @@ export function TaskCard({ task, onView, onEdit, onDelete }: TaskCardProps) {
       {...attributes}
       {...listeners}
       className={cn(
-        "group rounded border-l-[3px] bg-card shadow-sm transition-all duration-100",
+        "group rounded border-l-[3px] bg-card shadow-sm transition-all duration-100 select-none",
         "hover:bg-accent/50 cursor-grab active:cursor-grabbing",
         priorityAccent[task.priority],
         isDragging && "opacity-50 shadow-lg ring-2 ring-primary/40"
