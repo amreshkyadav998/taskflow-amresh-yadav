@@ -71,9 +71,10 @@ export function TaskCard({ task, onView, onEdit, onDelete }: TaskCardProps) {
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-6 w-6 shrink-0 rounded opacity-0 group-hover:opacity-100 transition-opacity -mt-0.5 -mr-1"
+                className="h-6 w-6 shrink-0 rounded opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity -mt-0.5 -mr-1"
                 onClick={(e) => e.stopPropagation()}
                 onPointerDown={(e) => e.stopPropagation()}
+                onTouchStart={(e) => e.stopPropagation()}
               >
                 <MoreHorizontal className="h-3.5 w-3.5" />
               </Button>
